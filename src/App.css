@@ -78,3 +78,6 @@ label{
     padding: 1rem;
     font-family: 'Roboto',sans-serif;
 }
+.submit__item{
+    min-width: 615px;
+}
