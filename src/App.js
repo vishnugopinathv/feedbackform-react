@@ -1,10 +1,13 @@
-import './App.css';
+import React from 'react';
 import Feedback from './Feedback';
+
 import './App.css';
 
 function App() {
   return (
-    <Feedback/>
+    <React.Fragment>
+      <Feedback/>
+    </React.Fragment>
   );
 }
 

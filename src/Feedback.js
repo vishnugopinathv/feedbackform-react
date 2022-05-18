@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { v1 as uuidv1 } from "uuid";
-
+import Submits from './Submits';
 function Feedback() {
   const [user, setUser] = useState("");
   const [department, setDepartment] = useState("");
@@ -50,19 +50,7 @@ function Feedback() {
           <input type="submit" className="submitbtn" />
         </form>
       </div>
-      <div className="submit__container">
-        {data.map((v) => {
-          return (
-            <div className="submit___item" key={v.id}>
-              <div className="item__data">
-                <p>Name: {v.name} </p>
-                <p>Department: {v.dept} </p>
-                <p>Rating: {v.rate} </p>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+      <Submits submitData={data}/>
     </React.Fragment>
   );
 }
